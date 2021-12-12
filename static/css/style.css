@@ -193,6 +193,7 @@ a:hover {
 }
 
 .sidebar li span {
+  pointer-events: none;
   color: var(--brand-color);
   transition: all 0.4s ease;
 }
