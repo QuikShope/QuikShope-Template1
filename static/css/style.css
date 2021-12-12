@@ -478,3 +478,16 @@ a:hover {
   margin-bottom: 2px;
   gap: 1.8px;
 }
+
+/* Single Page Design CSS */
+.iconBadge{
+  background-color: var(--brand-color);
+  width: 90px;
+  height: 90px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 28pt;
+  border-radius: 50%;
+  color: white;
+}
