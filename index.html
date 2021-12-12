@@ -26,13 +26,30 @@
             <div class="d-flex">
                 <a class="text-brand-color"><i class="fas fa-search fa-lg me-4"></i></a>
                 <a class="text-brand-color"><i class="fas fa-shopping-cart fa-lg me-4"></i></a>
-                <a class="text-brand-color"><i class="fas fa-bars fa-lg me-2"></i></a>
+                <a class="text-brand-color" task-trigger="sidebar-toggle" id="hamicon"><i class="fas fa-bars fa-lg me-2"></i></a>
             </div>
         </div>
     </nav>
     <!-- Navbar End -->
 
-    <div class="wrapper">
+
+    <!-- Side Bar Starts -->
+    <div class="sidebar hide" element-target='sideMenu'>
+        <ul>
+            <li sidebar-link-name="dummy" sidebar-link-target="https://google.com/"><span>List Item-1</span></li>
+            <li sidebar-link-name="dummy" sidebar-link-target="https://google.com/"><span>List Item-1</span></li>
+            <li sidebar-link-name="dummy" sidebar-link-target="https://google.com/"><span>List Item-1</span></li>
+            <li sidebar-link-name="dummy" sidebar-link-target="https://google.com/"><span>List Item-1</span></li>
+            <li sidebar-link-name="dummy" sidebar-link-target="https://google.com/"><span>List Item-1</span></li>
+            <li sidebar-link-name="dummy" sidebar-link-target="https://google.com/"><span>List Item-1</span></li>
+            <li sidebar-link-name="dummy" sidebar-link-target="https://google.com/"><span>List Item-1</span></li>
+            <li sidebar-link-name="dummy" sidebar-link-target="https://google.com/"><span>List Item-1</span></li>
+        </ul>
+
+    </div>
+    <!-- Side Bar Ends -->
+
+    <div class="wrapper" task-trigger="sidebar-hide">
         <!-- Carousel Start -->
         <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-indicators">
@@ -120,11 +137,14 @@
             <!-- Single product Start -->
             <div class="productcard mt-2R5">
                 <img src="./static/img/product_img.png" alt="">
-                <a class="fs-8 mt-1 text-black fw-semi-bold w-100 text-start text-nowrap overflow-hidden">Nike Air max React 270G  fggdfdf dfffdf</a>
+                <a class="fs-8 mt-1 text-black fw-semi-bold w-100 text-start text-nowrap overflow-hidden">Nike Air max
+                    React 270G fggdfdf dfffdf</a>
                 <div class="d-flex flex-row justify-content-between align-items-center w-100 mt-1R5">
                     <div class="d-flex flex-column align-items-start">
-                        <p class="fs-6 fw-semi-bold text-black m-0"><i class="fas fa-rupee-sign"></i>&nbsp;<span class="fs-6 fw-normal">3000</span></p>
-                        <p class="fs-9 fw-semi-bold text-gray m-0 mt-0R15"><s><i class="fas fa-rupee-sign"></i>&nbsp;5000</s>&nbsp;&nbsp;&nbsp;<span
+                        <p class="fs-6 fw-semi-bold text-black m-0"><i class="fas fa-rupee-sign"></i>&nbsp;<span
+                                class="fs-6 fw-normal">3000</span></p>
+                        <p class="fs-9 fw-semi-bold text-gray m-0 mt-0R15"><s><i
+                                    class="fas fa-rupee-sign"></i>&nbsp;5000</s>&nbsp;&nbsp;&nbsp;<span
                                 class="text-discount-color">40% Off</span></p>
                     </div>
                     <div class="love-btn">
@@ -136,11 +156,14 @@
             <!-- Single Product End -->
             <div class="productcard mt-2R5">
                 <img src="./static/img/product_img.png" alt="">
-                <a class="fs-8 mt-1 text-black fw-semi-bold w-100 text-start text-nowrap overflow-hidden">Nike Air max React 270G</a>
+                <a class="fs-8 mt-1 text-black fw-semi-bold w-100 text-start text-nowrap overflow-hidden">Nike Air max
+                    React 270G</a>
                 <div class="d-flex flex-row justify-content-between align-items-center w-100 mt-1R5">
                     <div class="d-flex flex-column align-items-start">
-                        <p class="fs-6 fw-semi-bold text-black m-0"><i class="fas fa-rupee-sign"></i>&nbsp;<span class="fs-6 fw-normal">3000</span></p>
-                        <p class="fs-9 fw-semi-bold text-gray m-0 mt-0R15"><s><i class="fas fa-rupee-sign"></i>&nbsp;5000</s>&nbsp;&nbsp;&nbsp;<span
+                        <p class="fs-6 fw-semi-bold text-black m-0"><i class="fas fa-rupee-sign"></i>&nbsp;<span
+                                class="fs-6 fw-normal">3000</span></p>
+                        <p class="fs-9 fw-semi-bold text-gray m-0 mt-0R15"><s><i
+                                    class="fas fa-rupee-sign"></i>&nbsp;5000</s>&nbsp;&nbsp;&nbsp;<span
                                 class="text-discount-color">40% Off</span></p>
                     </div>
                     <div class="love-btn active-love-btn">
@@ -151,11 +174,14 @@
             </div>
             <div class="productcard mt-2R5">
                 <img src="./static/img/product_img.png" alt="">
-                <a class="fs-8 mt-1 text-black fw-semi-bold w-100 text-start text-nowrap overflow-hidden">Nike Air max React 270G</a>
+                <a class="fs-8 mt-1 text-black fw-semi-bold w-100 text-start text-nowrap overflow-hidden">Nike Air max
+                    React 270G</a>
                 <div class="d-flex flex-row justify-content-between align-items-center w-100 mt-1R5">
                     <div class="d-flex flex-column align-items-start">
-                        <p class="fs-6 fw-semi-bold text-black m-0"><i class="fas fa-rupee-sign"></i>&nbsp;<span class="fs-6 fw-normal">3000</span></p>
-                        <p class="fs-9 fw-semi-bold text-gray m-0 mt-0R15"><s><i class="fas fa-rupee-sign"></i>&nbsp;5000</s>&nbsp;&nbsp;&nbsp;<span
+                        <p class="fs-6 fw-semi-bold text-black m-0"><i class="fas fa-rupee-sign"></i>&nbsp;<span
+                                class="fs-6 fw-normal">3000</span></p>
+                        <p class="fs-9 fw-semi-bold text-gray m-0 mt-0R15"><s><i
+                                    class="fas fa-rupee-sign"></i>&nbsp;5000</s>&nbsp;&nbsp;&nbsp;<span
                                 class="text-discount-color">40% Off</span></p>
                     </div>
                     <div class="love-btn active-love-btn">
@@ -166,11 +192,14 @@
             </div>
             <div class="productcard mt-2R5">
                 <img src="./static/img/product_img.png" alt="">
-                <a class="fs-8 mt-1 text-black fw-semi-bold w-100 text-start text-nowrap overflow-hidden">Nike Air max React 270G</a>
+                <a class="fs-8 mt-1 text-black fw-semi-bold w-100 text-start text-nowrap overflow-hidden">Nike Air max
+                    React 270G</a>
                 <div class="d-flex flex-row justify-content-between align-items-center w-100 mt-1R5">
                     <div class="d-flex flex-column align-items-start">
-                        <p class="fs-6 fw-semi-bold text-black m-0"><i class="fas fa-rupee-sign"></i>&nbsp;<span class="fs-6 fw-normal">3000</span></p>
-                        <p class="fs-9 fw-semi-bold text-gray m-0 mt-0R15"><s><i class="fas fa-rupee-sign"></i>&nbsp;5000</s>&nbsp;&nbsp;&nbsp;<span
+                        <p class="fs-6 fw-semi-bold text-black m-0"><i class="fas fa-rupee-sign"></i>&nbsp;<span
+                                class="fs-6 fw-normal">3000</span></p>
+                        <p class="fs-9 fw-semi-bold text-gray m-0 mt-0R15"><s><i
+                                    class="fas fa-rupee-sign"></i>&nbsp;5000</s>&nbsp;&nbsp;&nbsp;<span
                                 class="text-discount-color">40% Off</span></p>
                     </div>
                     <div class="love-btn active-love-btn">
@@ -193,12 +222,13 @@
 
 
 
-
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="./static/js/script.js"></script>
+
 </body>
 
 </html>

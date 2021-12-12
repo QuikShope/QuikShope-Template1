@@ -6,7 +6,7 @@
   --product-card-border-color: #c0c0c0;
   --discount-color: #ff3737;
   --love-color: #ff3737;
-  --inactive-tab-color: #D0D0D0;
+  --inactive-tab-color: #d0d0d0;
   --light-border-color: #e6e6e6;
 }
 
@@ -20,11 +20,11 @@
 
 /* Disable text selection */
 
-*{
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
+* {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 .body::-webkit-scrollbar {
@@ -58,8 +58,8 @@ a:hover {
   color: var(--sub-brand-color);
 }
 
-.text-justify{
-    text-align: justify;
+.text-justify {
+  text-align: justify;
 }
 
 /* Extended margins and paddings class */
@@ -71,12 +71,12 @@ a:hover {
 .mt-2R5 {
   margin-top: 0.75rem !important;
 }
-.mt-1R5{
-    margin-top: .36rem !important;
+.mt-1R5 {
+  margin-top: 0.36rem !important;
 }
 
-.mt-0R15{
-    margin-top: 0.15rem!important;
+.mt-0R15 {
+  margin-top: 0.15rem !important;
 }
 
 /* Extended font weight */
@@ -100,29 +100,46 @@ a:hover {
 }
 
 .fs-10 {
-    font-size: 0.5rem !important;
+  font-size: 0.5rem !important;
+}
+
+/* opacity Classes */
+.opacity-100 {
+  opacity: 1;
+}
+
+.opacity-70 {
+  opacity: 0.75;
+}
+
+.opacity-50 {
+  opacity: 0.5;
+}
+
+.opacity-25 {
+  opacity: 0.25;
 }
 
 /* Extended text colors */
 
 .text-black {
-  color: #000!important;
+  color: #000 !important;
 }
 
 .text-brand-color {
-  color: var(--brand-color)!important;
+  color: var(--brand-color) !important;
 }
 
 .text-gray {
-  color: #878787!important;
+  color: #878787 !important;
 }
 
 .text-discount-color {
-  color: var(--discount-color)!important;
+  color: var(--discount-color) !important;
 }
 
 .text-sub-brand-color {
-  color: var(--brand-color)!important;
+  color: var(--brand-color) !important;
 }
 
 /* Extended background colors */
@@ -140,6 +157,58 @@ a:hover {
 .wrapper {
   margin-top: 60px;
   margin-bottom: 50px;
+}
+
+/* Sidebar   */
+.sidebar {
+  position: fixed;
+  height: 100%;
+  width: 20rem;
+  z-index: 3;
+  background-color: white;
+  top: 3.6rem;
+  overflow: auto;
+  transition: all 0.5s ease;
+}
+
+.sidebar.hide {
+  right: -20rem;
+}
+.sidebar.show {
+  right: 0;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+/* Sidebar CSS */
+.sidebar li {
+  line-height: 4rem;
+  padding-left: 1rem;
+  /* border-top: 1px solid rgba(225, 225, 225, 0.1); */
+  border-bottom: 1px solid var(--product-card-border-color);
+  transition: all 0.5s ease;
+}
+
+.sidebar li span {
+  color: var(--brand-color);
+  transition: all 0.4s ease;
+}
+
+.sidebar li:hover {
+  background-color: var(--sub-brand-color);
+  color: white;
+}
+
+.sidebar li:hover span {
+  color: white;
+  padding-left: 3rem;
+}
+
+.sidebar li:last-child {
+  border-bottom: none;
 }
 
 /* Carousel Configurations */
@@ -181,8 +250,8 @@ a:hover {
   margin-right: 5px;
 }
 
-.single-category a{
-    font-size: 9px;
+.single-category a {
+  font-size: 9px;
 }
 
 .single-category .single-category-img {
@@ -260,59 +329,56 @@ a:hover {
   justify-content: space-between;
 }
 
-
 /* Tab bar */
-.twoOptionTabBar{
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    width: 100%;
-    height: 40px;
-    border-bottom: 1px solid var(--light-border-color);
-    border-top: 1px solid var(--light-border-color);
+.twoOptionTabBar {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  height: 40px;
+  border-bottom: 1px solid var(--light-border-color);
+  border-top: 1px solid var(--light-border-color);
 }
 
-.twoOptionTabBar span{
-    width: 2.25px;
-    height: 80%;
-    background-color: var(--light-border-color);
+.twoOptionTabBar span {
+  width: 2.25px;
+  height: 80%;
+  background-color: var(--light-border-color);
 }
-.twoOptionTabBar a{
-    font-size: 12px;
-    font-weight: 400;
-    color: var(--light-border-color)!important;
-}
-
-.twoOptionTabBar .active{
-    color: var(--brand-color)!important;
+.twoOptionTabBar a {
+  font-size: 12px;
+  font-weight: 400;
+  color: var(--light-border-color) !important;
 }
 
+.twoOptionTabBar .active {
+  color: var(--brand-color) !important;
+}
 
 /* Single product page CSS */
 
 /* Carousel image width full  */
-.fullWidthCarousel{
-    border-radius: 0px!important;
+.fullWidthCarousel {
+  border-radius: 0px !important;
 }
-.fullWidthCarousel img{
-    width: 100%;
+.fullWidthCarousel img {
+  width: 100%;
 }
 
 /* Brand large button */
-.brandLargeButton{
-    width: 90vw;
-    height: 40px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: var(--sub-brand-color);
-    box-shadow: 2px 4px 27px 9px #E4EBFF;
-    border: none!important;
-    border-radius: 4px;
+.brandLargeButton {
+  width: 90vw;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--sub-brand-color);
+  box-shadow: 2px 4px 27px 9px #e4ebff;
+  border: none !important;
+  border-radius: 4px;
 
-    /* Text related */
-    font-size: 0.75rem!important;
-    font-weight: 500;
-    color: #fff;
+  /* Text related */
+  font-size: 0.75rem !important;
+  font-weight: 500;
+  color: #fff;
 }
-
