@@ -12,7 +12,7 @@ $("[sidebar-link-target]").bind("click",function (element) {
     console.log(element.target.getAttribute("sidebar-link-name"));
     hideSidebar();
     console.log(element.target.getAttribute("sidebar-link-target"))
-    // window.location.href = element.target.getAttribute("sidebar-link-target");
+    window.location.href = element.target.getAttribute("sidebar-link-target");
 })
 
 
