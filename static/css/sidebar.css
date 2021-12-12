@@ -1,0 +1,65 @@
+/* This file conatins styling of sidebar navbar and a overlay when side bar is open */
+
+
+  
+.sidebar {
+    position: fixed;
+    height: 100%;
+    width: 20rem;
+    z-index: 7000;
+    background-color: white;
+    top: 3.6rem;
+    overflow: auto;
+    transition: all 0.5s ease;
+}
+  
+.sidebar.hide{
+    right: -20rem;
+}
+.sidebar.show{
+    right: 0;
+}
+
+
+.sidebar ul{
+    list-style: none;
+    padding: 0;
+}
+
+/* Img used in sidebar */
+.profilePic{
+    height: 4rem;
+    width: 4rem;
+    border-radius: 100rem;
+      
+}
+    
+/* List Items */
+
+.sidebar li {
+  line-height: 4rem;
+  padding-left: 2rem;
+  /* border-top: 1px solid rgba(225, 225, 225, 0.1); */
+  border-bottom: 1px solid var(--product-card-border-color);
+  transition: all 0.5s ease;
+}
+
+.sidebar li a{
+    color: var(--brand-color);
+    transition: all .4s ease;
+}
+
+
+.sidebar li:hover {
+    background-color: var(--sub-brand-color);
+    color: white;
+}
+
+.sidebar li:hover a{
+    color: white;
+    padding-left: 3rem;
+}
+
+.sidebar li:last-child {
+  border-bottom: none;
+}

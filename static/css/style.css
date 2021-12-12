@@ -103,6 +103,24 @@ a:hover {
     font-size: 0.5rem !important;
 }
 
+
+/* opacity Classes */
+.opacity-100{
+  opacity: 1;
+}
+
+.opacity-70{
+  opacity: .75;
+}
+
+.opacity-50{
+  opacity: .5;
+}
+
+.opacity-25{
+  opacity: .25;
+}
+
 /* Extended text colors */
 
 .text-black {
