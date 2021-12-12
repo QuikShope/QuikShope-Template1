@@ -369,7 +369,7 @@ a:hover {
 /* Brand large button */
 .brandLargeButton {
   width: 90vw;
-  height: 40px;
+  height: 50px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -382,4 +382,99 @@ a:hover {
   font-size: 0.75rem !important;
   font-weight: 500;
   color: #fff;
+}
+
+/* Cart Related CSS */
+
+/* Cart product card */
+.cartProductCard{
+  position: relative;
+  width: 90vw;
+  display: grid;
+  grid-template-columns: auto auto;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid var(--product-card-border-color);
+}
+
+.cartProductCard img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  overflow: hidden;
+  border-radius: 5px;
+}
+
+.cartProductCard .trashIcon{
+  position: absolute;
+  right: 10px;
+  top: 5px;
+  color: grey;
+}
+
+.cartProductCard .details{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-left: 5px;
+}
+
+.cartProductCard .details .title{
+  padding: 0;
+  margin: 0;
+  padding-right: 15px;
+  text-align: start;
+  font-size: 14px;
+  font-weight: bold;
+  color: var(--brand-color);
+  max-lines: 2;
+  overflow: hidden;
+}
+
+.cartProductCard .details .footer{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-right: 4px;
+}
+
+.cartProductCard .details .footer a{
+  font-weight: bold;
+  color: var(--sub-brand-color);
+}
+
+.cartProductCard .details .footer .counter{
+  border-radius: 8px;
+  border: 0.9px solid var(--product-card-border-color);
+}
+
+.cartProductCard .details .footer .counter i{
+  color: gray;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+.cartProductCard .details .footer .counter a{
+  background-color: var(--inactive-tab-color);
+  padding-left: 5px;
+  padding-right: 5px;
+  font-weight: 400;
+  color: gray;
+}
+
+.cartBillDiv{
+  /* d-flex flex-column mb-3 */
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+  width: 90vw;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid var(--product-card-border-color);
+}
+
+.cartBillDiv hr{
+  margin-top: 2px;
+  margin-bottom: 2px;
+  gap: 1.8px;
 }
