@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en" translate="no">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="google" content="notranslate">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link rel="stylesheet" href="./static/css/style.css">
+</head>
+
+<body class="text-center">
+
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-light fixed-top bg-white py-2">
+        <div class="container-fluid">
+            <a class="navbar-brand text-brand-color"><i class="fas fa-chevron-left"></i>&nbsp;&nbsp;<span
+                    class="mx-1 fw-bold">Checkout</span></a>
+        </div>
+    </nav>
+    <!-- Navbar End -->
+
+    <!-- Side Bar Starts -->
+    <div class="sidebar hide" element-target='sideMenu'>
+        <ul>
+            <li sidebar-link-name="dummy" sidebar-link-target="https://google.com/"><span>List Item-1</span></li>
+            <li sidebar-link-name="dummy" sidebar-link-target="https://google.com/"><span>List Item-1</span></li>
+            <li sidebar-link-name="dummy" sidebar-link-target="https://google.com/"><span>List Item-1</span></li>
+            <li sidebar-link-name="dummy" sidebar-link-target="https://google.com/"><span>List Item-1</span></li>
+            <li sidebar-link-name="dummy" sidebar-link-target="https://google.com/"><span>List Item-1</span></li>
+            <li sidebar-link-name="dummy" sidebar-link-target="https://google.com/"><span>List Item-1</span></li>
+            <li sidebar-link-name="dummy" sidebar-link-target="https://google.com/"><span>List Item-1</span></li>
+            <li sidebar-link-name="dummy" sidebar-link-target="https://google.com/"><span>List Item-1</span></li>
+        </ul>
+
+    </div>
+    <!-- Side Bar Ends -->
+
+
+    <div class="wrapper" task-trigger="sidebar-hide">
+
+        <!-- Container Start -->
+        <div class="container">
+
+            <!-- Accordion  start -->
+            <div class="accordion mt-2" id="accordionExample">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            Price List Section
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <!-- Cart Product List Start -->
+                            <div class="d-flex flex-column align-items-center gap-2 mx-2R5">
+                                <!-- Product card start -->
+                                <div class="cartProductCard">
+                                    <img src="./static/img/product_img.png" alt="">
+                                    <div class="details">
+                                        <p class="title">Nike Air Zoom Pegasus 36 Miami</p>
+                                        <div class="footer">
+                                            <a><i class="fas fa-rupee-sign"></i>3000</a>
+                                            <div class="quantityProduct">
+                                                <a class="text-muted fs-7">Qty</a>
+                                                <span>8</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Product card stop -->
+                                <div class="cartProductCard">
+                                    <img src="./static/img/product_img.png" alt="">
+                                    <div class="details">
+                                        <p class="title">Nike Air Zoom Pegasus 36 Miami</p>
+                                        <div class="footer">
+                                            <a><i class="fas fa-rupee-sign"></i>3000</a>
+                                            <div class="quantityProduct">
+                                                <a class="text-muted fs-7">Qty</a>
+                                                <span>8</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Cart Product List End -->
+
+                            <!-- Proceed Button Start -->
+                            <div class="w-100 d-flex flex-column justify-content-center align-items-center mt-2 mb-2">
+                                <div class="cartBillDiv">
+                                    <div class="d-flex flex-row justify-content-between fs-7 "><span>Items (3)</span><span class="text-brand-color fw-normal"><i class="fas fa-rupee-sign "></i>&nbsp;6700</span></div>
+                                    <div class="d-flex flex-row justify-content-between fs-7 "><span>Items (3)</span><span class="text-brand-color fw-normal"><i class="fas fa-rupee-sign "></i>&nbsp;6700</span></div>
+                                    <div class="d-flex flex-row justify-content-between fs-7 "><span>Items (3)</span><span class="text-brand-color fw-normal"><i class="fas fa-rupee-sign "></i>&nbsp;6700</span></div>
+                                    <hr>
+                                    <div class="d-flex flex-row justify-content-between fs-7 fw-semi-bold text-brand-color"><span>Total Price</span><span><i class="fas fa-rupee-sign"></i>&nbsp;6700</span></div>
+                                </div>
+                                <button class="brandLargeButton">Proceed</button>
+                            </div>
+                            <!-- Proceed Button End -->
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            Choose Delivery Mode
+                        </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body text-start">
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                                <label class="form-check-label" for="flexRadioDefault1">
+                                  Home Delivery
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                                <label class="form-check-label" for="flexRadioDefault2">
+                                  Self Pickup
+                                </label>
+                            </div>
+                            <div class="w-100 d-flex justify-content-center mt-3 mb-1">
+                                <button class="brandLargeButton">Proceed</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            Choose Date & Time
+                        </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <div class="mb-3">
+                                <label for="exampleFormControlInput1" class="form-label w-100 text-start text-brand-color fw-bold">Select Date</label>
+                                <input type="date" class="form-control" id="exampleFormControlInput1" >
+                            </div>
+                            <div class="mb-3">
+                                <label for="exampleFormControlInput1" class="form-label w-100 text-start text-brand-color fw-bold">Select Time</label>
+                                <input type="time" class="form-control" id="exampleFormControlInput1" >
+                            </div>
+                            <div class="w-100 d-flex justify-content-center mt-3 mb-1">
+                                <button class="brandLargeButton">Proceed</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                            Choose Table
+                        </button>
+                    </h2>
+                    <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <a class="text-brand-color fw-semi-bold">Scan QR code in the Restaurant to book a table</a><br>
+                            <div class="w-100 d-flex justify-content-center mt-3 mb-2">
+                                <button class="brandLargeButton"><i class="fas fa-qrcode fa-lg"></i>&nbsp;&nbsp;SCAN QR</button>
+                            </div>
+                            <a class="text-brand-color fw-semi-bold">Select Table ID</a><br><br>
+                            <select class="form-select" aria-label="Default select example">
+                                <option selected>Select Table</option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                            </select>
+                            <div class="w-100 d-flex justify-content-center mt-3 mb-1">
+                                <button class="brandLargeButton">Proceed</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                            Apply Promo
+                        </button>
+                    </h2>
+                    <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body text-start">
+                            <a class="text-black fs-6 fw-normal">Enter coupon code (If you have any)</a>
+                            <div class="input-group mb-3 w-100">
+                                <input type="text" class="form-control" placeholder="Enter coupon code" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                                <span class="input-group-text fs-7 text-white fw-semi-bold bg-brand-color" id="basic-addon2">Apply</span>
+                            </div>
+                            <div class="cartBillDiv">
+                                <div class="d-flex flex-row justify-content-between fs-7 "><span>Items (3)</span><span class="text-brand-color fw-normal"><i class="fas fa-rupee-sign "></i>&nbsp;6700</span></div>
+                                <div class="d-flex flex-row justify-content-between fs-7 "><span>Items (3)</span><span class="text-brand-color fw-normal"><i class="fas fa-rupee-sign "></i>&nbsp;6700</span></div>
+                                <div class="d-flex flex-row justify-content-between fs-7 "><span>Items (3)</span><span class="text-brand-color fw-normal"><i class="fas fa-rupee-sign "></i>&nbsp;6700</span></div>
+                                <hr>
+                                <div class="d-flex flex-row justify-content-between fs-7 fw-semi-bold text-brand-color"><span>Total Price</span><span><i class="fas fa-rupee-sign"></i>&nbsp;6700</span></div>
+                            </div>
+                            <a class="text-black fw-bold">Payment options</a><br>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                                <label class="form-check-label" for="flexRadioDefault1">
+                                  Pay On Delivery
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                                <label class="form-check-label" for="flexRadioDefault2">
+                                  Online Payment
+                                </label>
+                            </div>
+                            <div class="w-100 d-flex justify-content-center mt-3 mb-1">
+                                <button class="brandLargeButton">Proceed</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Accordion End -->
+
+
+        </div>
+        <!-- Container End -->
+
+    </div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="./static/js/script.js"></script>
+
+</body>
+
+</html>

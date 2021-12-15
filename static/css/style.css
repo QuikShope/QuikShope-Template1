@@ -1,6 +1,7 @@
 :root {
   --brand-color: #003572;
   --sub-brand-color: #365099;
+  --light-sub-brand-color: #EBF0FF;
   --carousel-indicator-color: #fff;
   --single-category-border-color: #b7caff;
   --product-card-border-color: #c0c0c0;
@@ -233,6 +234,31 @@ a:hover {
   border-radius: 50%;
 }
 
+/* Accordion Configuration Custom */
+
+/* .accordion-header{
+  background-color: var(--brand-color);
+  border-radius: 20px!important;
+} */
+
+.accordion-item{
+  border: none;
+}
+
+.accordion-button{
+  background-color: var(--light-sub-brand-color);
+  border-radius: 25px!important;
+  margin-bottom: 10px;
+  color: var(--brand-color);
+  font-weight: 600;
+  height: 45px;
+}
+
+.accordion-body{
+  /* padding: 0; */
+  padding: 10px;
+}
+
 /* Category list hide scrollbar but keeep functionality */
 .category-list::-webkit-scrollbar {
   display: none;
@@ -435,12 +461,25 @@ a:hover {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: flex-end;
   padding-right: 4px;
 }
 
 .cartProductCard .details .footer a{
   font-weight: bold;
   color: var(--sub-brand-color);
+}
+
+.cartProductCard .details .footer .quantityProduct{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.cartProductCard .details .footer .quantityProduct span{
+  color: var(--sub-brand-color);
+  font-weight: 600;
 }
 
 .cartProductCard .details .footer .counter{
@@ -471,6 +510,7 @@ a:hover {
   padding: 10px;
   border-radius: 10px;
   border: 1px solid var(--product-card-border-color);
+  gap: 8px;
 }
 
 .cartBillDiv hr{
